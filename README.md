@@ -7,3 +7,5 @@ Main sources of inspiration
 - https://github.com/davidbrewer/xmonad-ubuntu-conf  *[very well documented xmonad setup]*
 
 Ended up primarily using holman's dotfile implementation.
+
+TODO: set zsh as terminal. set firefox / arora / chromium default pages
