@@ -1,0 +1,19 @@
+# borrowed from http://github.com/holman/dotfiles
+[user]
+        name = Rob Scanlon
+        email = robscanlon@gmail.com
+[alias]
+        co = checkout
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+[core]
+        excludesfile = ~/.gitignore
+        editor = vim
+[apply]
+        whitespace = nowarn
+[github]
+        user = arscan
+[mergetool]
+        keepBackup = false

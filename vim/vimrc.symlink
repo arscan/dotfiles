@@ -1,0 +1,54 @@
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+colorscheme wombat
+
+set foldmethod=indent
+set foldlevel=99
+
+set nobackup
+set noswapfile
+
+set number
+set list
+
+syntax on
+filetype on
+filetype plugin indent on
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+
+let g:pep8_map='<leader>8'
+
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+
+set completeopt=menuone,longest,preview
+
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+let mapleader = ","
+
+map <leader>n :NERDTreeToggle<CR>
+
+map <leader>c :BufClose<CR>
+
+"set cursorline
+"autocmd InsertEnter * highlight CursorLine guifg=white guibg=blue ctermfg=white ctermbg=blue
+"autocmd InsertLeave * highlight CursorLine guifg=white guibg=darkblue ctermfg=white ctermbg=darkblue
+
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
+"http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode                           
