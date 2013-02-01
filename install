@@ -97,6 +97,27 @@ install_dotfiles () {
   done
 }
 
+install_shell () {
+
+  if [ "$SHELL" != "/bin/zsh" ]
+  then
+    user "Do you want to install zsh? [Y]es, [N]o?"
+    read action
+
+    case "$action" in
+      y | Y)
+        command -v zsh >/dev/null 2>&1 || sudo apt-get install zsh
+        chsh -s /bin/zsh
+        success "installed zsh. restart the shell in order see the effect"
+        ;;
+      
+      * )
+        ;;
+    esac
+
+  fi
+
+}
 # A little bit of flair.  I was bored.
 
 if [ `tput cols` -gt 85 ]
@@ -118,6 +139,7 @@ else
 fi
 
 install_dotfiles
+install_shell
 
 echo ''
 echo '  All installed!'

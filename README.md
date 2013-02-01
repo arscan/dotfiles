@@ -8,4 +8,12 @@ Main sources of inspiration
 
 Ended up primarily using holman's dotfile implementation.
 
-TODO: set zsh as terminal. set firefox / arora / chromium default pages
+Feel free to use what you will.  Thank the guys above.
+
+```sh
+#install me
+./install
+
+```
+
+TODO: set firefox / arora / chromium default pages
