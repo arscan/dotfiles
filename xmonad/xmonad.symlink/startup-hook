@@ -80,10 +80,10 @@ fi
 # I really need to figure out how to place multiple chomes in different workspaces.  spawnOn don't seem to work right for me
 if [ -z "$(pgrep arora)" ] ; then
 
-    arora &
+    arora https://habitrpg.com &
 fi
 # RCS - Launch firefox, because its my mail client
 if [ -z "$(pgrep firefox)" ] ; then
     sleep 10
-    firefox &
+    firefox https://gmail.com &
 fi

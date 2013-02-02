@@ -26,6 +26,6 @@ sudo cp ~/.xmonad/xmonad.desktop /usr/share/xsessions
 sudo cp ~/.xmonad/images/custom_xmonad_badge.png /usr/share/unity-greeter
 
 echo "Linking to customized gnome 2 configuration..."
-mv ~/.gtkrc-2.0 ~/gtkrc-2.0.original
-ln -s .xmonad/.gtkrc-2.0 ~/.gtkrc-2.0
+mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.original
+ln -s ~/.xmonad/.gtkrc-2.0 ~/.gtkrc-2.0
 
