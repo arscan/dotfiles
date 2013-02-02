@@ -1,11 +1,31 @@
 #!/bin/sh
-#
+
+# Used https://github.com/holman/dotfiles as inspiration
+# Check it out, its worth it
+
 DOTFILES_ROOT="`pwd`"
 
 set -e
 
-# Taken almost directly from https://github.com/holman/dotfiles
-# Use his. Its better.
+# A little bit of flair.  I was bored.
+
+if [ `tput cols` -gt 85 ]
+then
+
+cat <<EOF
+__________      ___. /\         ________          __    _____.__.__                 
+\______   \ ____\_ |_)/  ______ \______ \   _____/  |__/ ____\__|  |   ____   ______
+ |       _//  _ \| __ \ /  ___/  |    |  \ /  _ \   __\   __\|  |  | _/ __ \ /  ___/
+ |    |   (  <_> ) \_\ \\\___ \   |    \`   (  <_> )  |  |  |  |  |  |_\  ___/ \___ \ 
+ |____|_  /\____/|___  /____  > /_______  /\____/|__|  |__|  |__|____/\___  >____  >
+        \/           \/     \/          \/                                \/     \/ 
+
+
+EOF
+
+else
+    echo "Welcome to Rob's Dotfiles"
+fi
 
 info () {
   printf "  [ \033[00;34m..\033[0m ] $1"
@@ -37,7 +57,8 @@ install_dotfiles () {
   backup_all=0
   skip_all=0
 
-  for source in `find $DOTFILES_ROOT -maxdepth 2 -name \*.symlink`
+
+  for source in `find $1 -maxdepth 2 -name \*.symlink`
   do
     dest="$HOME/.`basename \"${source%.*}\"`"
 
@@ -97,49 +118,55 @@ install_dotfiles () {
   done
 }
 
-install_shell () {
+install_dir() {
+    info "Installing $1"
+    workingdir=$1
 
-  if [ "$SHELL" != "/bin/zsh" ]
-  then
-    user "Do you want to install zsh? [Y]es, [N]o?"
-    read action
+    install_dotfiles $workingdir
 
-    case "$action" in
-      y | Y)
-        command -v zsh >/dev/null 2>&1 || sudo apt-get install zsh
-        chsh -s /bin/zsh
-        success "installed zsh. restart the shell in order see the effect"
-        ;;
-      
-      * )
-        ;;
-    esac
+    if [ -f ${workingdir}install.sh ]; then
 
-  fi
+        ${workingdir}install.sh
 
+    fi
 }
-# A little bit of flair.  I was bored.
 
-if [ `tput cols` -gt 85 ]
-then
+install_all=0
 
-cat <<EOF
-__________      ___. /\         ________          __    _____.__.__                 
-\______   \ ____\_ |_)/  ______ \______ \   _____/  |__/ ____\__|  |   ____   ______
- |       _//  _ \| __ \ /  ___/  |    |  \ /  _ \   __\   __\|  |  | _/ __ \ /  ___/
- |    |   (  <_> ) \_\ \\\___ \   |    \`   (  <_> )  |  |  |  |  |  |_\  ___/ \___ \ 
- |____|_  /\____/|___  /____  > /_______  /\____/|__|  |__|  |__|____/\___  >____  >
-        \/           \/     \/          \/                                \/     \/ 
+for dir in $DOTFILES_ROOT/*/; do
 
+    shortdir=${dir#$DOTFILES_ROOT/}
+    shortdir=${shortdir%/}
+    install_current=0
 
-EOF
+    if [ "$install_all" -eq "0" ]; then
+        user "Would you like to install $shortdir? [Y]es, [N]o, [A]ll, [Q]uit"
+        read action
 
-else
-    echo "Welcome to Rob's Dotfiles"
-fi
+        case "$action" in
+            y* | Y*)
+                install_current=1
+                ;;
 
-install_dotfiles
-install_shell
+            a* | A*)
+                install_all=1
+                ;;
+
+            q* | Q*)
+                exit 0
+                ;;
+
+            * )
+                ;;
+        esac
+    fi
+
+    if [ "$install_all" -eq "1" ] || [ "$install_current" -eq "1" ]; then
+        info "installing $shortdir"
+        install_dir $dir
+    fi
+
+done
 
 echo ''
 echo '  All installed!'
