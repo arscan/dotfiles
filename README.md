@@ -11,11 +11,15 @@ Design Goals:
 ---
 I've extended the functionality here past what is typically in dotfile projects
 to not only copy over dotfiles, but also install and configure
-the entire environment.  Things are organized so that I can install only the parts that 
-I want based on the machine that I'm using. Its centered around topics, just like Holman's 
-dotfile project, but it prompts you before you install each topic. I was tired of
+the entire environment. I was tired of
 reconfiguring / reinstalling everything that I want each time I set up a new machine, and 
 this seemed like a good solution.
+
+ Things are organized so that I can install only the parts that 
+I want based on the machine that I'm using. Its centered around topics, just like Holman's 
+dotfile project, but it prompts you before you install each topic. This suits me well,
+as I generally have a couple of distinct types of installs that I want to manage (desktop, laptop, VM),
+and it doesn't make sense to install everything on each machine.
 
 I used Holman's for quite a long time, but I figured it was about time I came up with my 
 own.  His is also somewhat tilted towards ruby development, which I don't ever use.
