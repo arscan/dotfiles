@@ -26,7 +26,9 @@ Usage:
 ---
 
 ```sh
+
 #install me
+
 ./install.sh
 
 ```
@@ -35,7 +37,7 @@ You will be prompted before each topic is installed.  I suggest that you take a 
 at what the ```xmonad``` topic does before you give that a go, as it is mainly based on 
 David Brewer's xmonad setup and hasn't been tested on anything other than Ubuntu 12.04.
 
-For the dotfiles, it will prompt you if it finds that you already have any isntalled.
+For the dotfiles, it will prompt you if it finds that you already have any installed.
 
 Extending:
 ---
