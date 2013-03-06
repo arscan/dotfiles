@@ -30,11 +30,7 @@ Usage:
 ---
 
 ```sh
-
-#install me
-
 ./install.sh
-
 ```
 
 You will be prompted before each topic is installed.  I suggest that you take a look
