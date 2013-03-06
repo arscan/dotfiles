@@ -91,7 +91,7 @@ myWorkspaces =
     "7:Chat",  "8:Tunz", "9:Asana",
     "4:Term",  "5:Dev", "6:Web",
     "1:Pix",  "2:Todo", "3:Mail",
-    "0:VM",    "Extr1", "Extr2"
+    "0:T2",    "Extr1", "Extr2"
   ]
 
 startupWorkspace = "5:Dev"  -- which workspace do you want to be on after launch?
