@@ -6,6 +6,10 @@ colorscheme wombat
 
 set foldmethod=indent
 set foldlevel=99
+set hidden
+
+set guifont=Monospace\ 7
+set gfn=Monospace\ 7
 
 set nobackup
 set noswapfile
@@ -52,3 +56,5 @@ vmap <S-Tab> <gv
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode                           
+
+
