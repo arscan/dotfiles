@@ -34,10 +34,11 @@ let g:SuperTabDefaultCompletionType = "context"
 
 set completeopt=menuone,longest,preview
 
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
+" change make more like xmonad
+map <c-j> <c-w>h
+map <c-k> <c-w>l
+"map <c-l> <c-w>l
+"map <c-h> <c-w>h
 
 let mapleader = ","
 
