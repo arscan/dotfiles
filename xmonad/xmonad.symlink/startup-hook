@@ -73,9 +73,6 @@ if [ -z "$(pgrep chromium)" ] ; then
     chromium-browser &
 fi
 
-if [ -z "$(pgrep gvim)" ] ; then
-    gvim &
-fi
 # RCS - arora for todo list
 # I really need to figure out how to place multiple chomes in different workspaces.  spawnOn don't seem to work right for me
 if [ -z "$(pgrep arora)" ] ; then
