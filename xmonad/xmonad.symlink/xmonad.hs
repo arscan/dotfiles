@@ -272,7 +272,6 @@ myManagementHooks = [
   , (className =? "Komodo IDE" <&&> resource =? "Komodo_find2") --> doFloat
   , (className =? "Komodo IDE" <&&> resource =? "Komodo_gotofile") --> doFloat
   , (className =? "Komodo IDE" <&&> resource =? "Toplevel") --> doFloat
-  , (className =? "Empathy") --> doF (W.shift "7:Chat")
   , (className =? "Firefox") --> doF (W.shift "3:Mail")
   , (className =? "Arora") --> doF (W.shift "3:Mail")
   , (className =? "Chromium-browser") --> doF (W.shift "6:Web")
