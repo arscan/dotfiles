@@ -41,4 +41,13 @@ augroup CursorLine
     au WinLeave * setlocal nocursorline
 augroup END
 
+" allow to switch buffers even if one is unsaved
 set hidden
+
+" set the leader
+
+
+let mapleader = ","
+
+let g:EasyMotion_leader_key = '<Leader>'
+let g:NERDTreeWinPos = "right"
