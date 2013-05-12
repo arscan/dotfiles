@@ -29,9 +29,16 @@ set t_Co=256
 
 " railscast theme
 " https://github.com/ryanb/dotfiles/blob/master/vim/colors/railscasts.vim
-"colorscheme railscasts
-colorscheme grb256
-"colorscheme candy
+colorscheme railscasts
+
+" highlight cursor, only on current window
 set cursorline
+hi CursorLine cterm=NONE ctermbg=234
+
+augroup CursorLine
+    au!
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
 
 set hidden
