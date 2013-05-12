@@ -1,0 +1,37 @@
+" get pathogen going
+execute pathogen#infect()
+
+" syntax?  uh, yeah
+syntax on
+
+" language specific tabs
+filetype plugin indent on
+
+" do some tabs
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+
+" switching between windows should be easier
+map <c-j> <c-w>h
+map <c-k> <c-w>l
+
+" show ctrl characters
+set list
+
+" show line numbers
+set number
+
+" allow 256 colors in here
+set t_Co=256
+
+" railscast theme
+" https://github.com/ryanb/dotfiles/blob/master/vim/colors/railscasts.vim
+"colorscheme railscasts
+colorscheme grb256
+"colorscheme candy
+set cursorline
+
+set hidden
