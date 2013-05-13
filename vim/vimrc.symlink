@@ -64,6 +64,8 @@ let g:NERDTreeWinPos = "right"
 " this might not be ideal.
 autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
 
+" close if nerdtree is the only thing left open
+
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
 " Close all open buffers on entering a window if the only
