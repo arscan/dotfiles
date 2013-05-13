@@ -18,6 +18,10 @@ set expandtab
 map <c-j> <c-w>h
 map <c-k> <c-w>l
 
+" switch between previous and next buffers
+map <c-n> :bn<CR>
+map <c-p> :bp<CR>
+
 " show ctrl characters
 set list
 
