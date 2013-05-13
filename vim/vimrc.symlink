@@ -14,6 +14,9 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
+" ruby should only do 2 spaces for some reason
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 " switching between windows should be easier
 map <c-j> <c-w>h
 map <c-k> <c-w>l
@@ -49,9 +52,12 @@ augroup END
 set hidden
 
 " set the leader
-
-
 let mapleader = ","
 
+" set easymotion to activate on one , since I don't use it that much
 let g:EasyMotion_leader_key = '<Leader>'
+
+" NERDTree settings
 let g:NERDTreeWinPos = "right"
+
+autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
