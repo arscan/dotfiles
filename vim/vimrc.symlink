@@ -14,6 +14,10 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
+" the backups/swapfiles are nothing but annoying to me
+set nobackup
+set noswapfile
+
 " ruby should only do 2 spaces for some reason
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
