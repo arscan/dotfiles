@@ -25,3 +25,6 @@
 [submodule "vim/vim.symlink/bundle/snipmate"]
 	path = vim/vim.symlink/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "vim/vim.symlink/bundle/supertab"]
+	path = vim/vim.symlink/bundle/supertab
+	url = git://github.com/ervandew/supertab.git
