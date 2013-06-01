@@ -41,8 +41,14 @@ map <c-j> <c-w>h
 map <c-k> <c-w>l
 
 " switch between previous and next buffers
-map <c-n> :bn<CR>
-map <c-p> :bp<CR>
+map <c-n> :BufSurfBack<CR>
+map <c-p> :BufSurfForward<CR>
+
+" this isn't working for some reason. need to fix
+" NERD tree shouldn't show up in the BufSurf
+" Maybe try a different plugin?
+let g:BufSurfIgnore = 'NERD_tree'
+let g:BufSurfMessages = 1
 
 " show ctrl characters
 set list
@@ -111,3 +117,4 @@ noremap   <Right>  <NOP>
 
 " ruby sinatra wasn't defined in tcomment
 call tcomment#DefineType('ruby-sinatra',     '# %s'             )
+
