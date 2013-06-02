@@ -41,8 +41,8 @@ map <c-j> <c-w>h
 map <c-k> <c-w>l
 
 " switch between previous and next buffers
-map <c-n> :BufSurfBack<CR>
-map <c-p> :BufSurfForward<CR>
+map <c-n> :BufSurfForward<CR>
+map <c-p> :BufSurfBack<CR>
 
 " this isn't working for some reason. need to fix
 " NERD tree shouldn't show up in the BufSurf
