@@ -26,7 +26,7 @@ hi cursor     guibg=#ffffff ctermbg=231
 hi CursorLine guibg=#333435 cterm=NONE ctermbg=59
 hi LineNr     guifg=#666666 ctermfg=59
 hi Visual     guibg=#5A647E ctermbg=60
-hi Search     guifg=NONE    guibg=#131313  gui=NONE ctermfg=NONE cterm=NONE
+hi Search     guifg=NONE    guibg=#131313  gui=NONE ctermfg=232 ctermbg=250
 hi Folded     guifg=#F6F3E8 guibg=#444444  gui=NONE ctermfg=230 ctermbg=59 cterm=NONE
 hi Directory  guifg=#A5C160 gui=NONE ctermfg=143 cterm=NONE
 hi Error      guifg=#FFFFFF guibg=#990000 ctermfg=231 ctermbg=88
