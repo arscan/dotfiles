@@ -16,6 +16,9 @@ set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 
+" 2 = always show the status bar
+set laststatus=2
+
 " syntax?  uh, yeah
 syntax on
 
@@ -33,9 +36,6 @@ set expandtab
 set nobackup
 set noswapfile
 
-" ruby should only do 2 spaces for some reason
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-
 " switching between windows should be easier
 map <c-j> <c-w>h
 map <c-k> <c-w>l
@@ -47,8 +47,8 @@ map <c-p> :BufSurfBack<CR>
 " this isn't working for some reason. need to fix
 " NERD tree shouldn't show up in the BufSurf
 " Maybe try a different plugin?
-let g:BufSurfIgnore = 'NERD_tree'
-let g:BufSurfMessages = 1
+ let g:BufSurfIgnore = 'NERD_tree'
+ let g:BufSurfMessages = 1
 
 " show ctrl characters
 set list
@@ -77,20 +77,12 @@ augroup END
 set hidden
 
 " set the leader
-let mapleader = ","
-
-" set easymotion to activate on one , since I don't use it that much
-let g:EasyMotion_leader_key = '<Leader>'
+let mapleader = "\<Space>"
 
 " NERDTree settings
 let g:NERDTreeWinPos = "right"
 
-" auto-synch nerd tree... note that it forces nerdtree to be always open
-" this might not be ideal.
-autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
-
 " close if nerdtree is the only thing left open
-
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
 " Close all open buffers on entering a window if the only
@@ -105,6 +97,9 @@ function! s:CloseIfOnlyNerdTreeLeft()
   endif
 endfunction
 
+" Ctrl-e to toggle nerd tree
+nnoremap <C-e> :NERDTreeToggle<CR>
+
 " don't allow arrow keys.
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
@@ -115,6 +110,16 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+" set font when using gvim
+if has("gui_running")
+  if has("gui_win32")
+    set guifont=Consolas:h10:cANSI
+  endif
+endif
+
 " ruby sinatra wasn't defined in tcomment
 call tcomment#DefineType('ruby-sinatra',     '# %s'             )
+
+" ruby should only do 2 spaces for some reason
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
