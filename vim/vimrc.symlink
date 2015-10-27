@@ -41,8 +41,8 @@ map <c-j> <c-w>h
 map <c-k> <c-w>l
 
 " switch between previous and next buffers
-map <c-n> :BufSurfForward<CR>
-map <c-p> :BufSurfBack<CR>
+map <c-i> :BufSurfForward<CR>
+map <c-u> :BufSurfBack<CR>
 
 " this isn't working for some reason. need to fix
 " NERD tree shouldn't show up in the BufSurf
@@ -83,19 +83,19 @@ let mapleader = "\<Space>"
 let g:NERDTreeWinPos = "right"
 
 " close if nerdtree is the only thing left open
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
+" function! s:CloseIfOnlyNerdTreeLeft()
+"   if exists("t:NERDTreeBufName")
+"     if bufwinnr(t:NERDTreeBufName) != -1
+"       if winnr("$") == 1
+"         q
+"       endif
+"     endif
+"   endif
+" endfunction
 
 " Ctrl-e to toggle nerd tree
 nnoremap <C-e> :NERDTreeToggle<CR>
