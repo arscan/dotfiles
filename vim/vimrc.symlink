@@ -100,6 +100,9 @@ let g:NERDTreeWinPos = "right"
 " Ctrl-e to toggle nerd tree
 nnoremap <C-e> :NERDTreeToggle<CR>
 
+" Auto close nerd tree after opening a file
+let NERDTreeQuitOnOpen = 1
+
 " don't allow arrow keys.
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
