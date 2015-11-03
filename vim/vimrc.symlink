@@ -36,10 +36,6 @@ set expandtab
 set nobackup
 set noswapfile
 
-" switching between windows should be easier
-map <c-j> <c-w>h
-map <c-k> <c-w>l
-
 " switch between previous and next buffers
 map <c-i> :BufSurfForward<CR>
 map <c-u> :BufSurfBack<CR>
