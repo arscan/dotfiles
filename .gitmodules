@@ -52,3 +52,6 @@
 [submodule "vim/vim.symlink/bundle/vim-airline"]
 	path = vim/vim.symlink/bundle/vim-airline
 	url = git://github.com/bling/vim-airline.git
+[submodule "vim/vim.symlink/bundle/vim-togglelist"]
+	path = vim/vim.symlink/bundle/vim-togglelist
+	url = git://github.com/milkypostman/vim-togglelist.git
