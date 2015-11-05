@@ -55,3 +55,6 @@
 [submodule "vim/vim.symlink/bundle/vim-togglelist"]
 	path = vim/vim.symlink/bundle/vim-togglelist
 	url = git://github.com/milkypostman/vim-togglelist.git
+[submodule "vim/vim.symlink/bundle/vim-json"]
+	path = vim/vim.symlink/bundle/vim-json
+	url = git://github.com/elzr/vim-json.git
