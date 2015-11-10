@@ -94,6 +94,9 @@ call tcomment#DefineType('ruby-sinatra',     '# %s'             )
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype coffee setlocal ts=2 sts=2 sw=2
 
+" folding
+autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+
 " pretty print json
 nmap =j :%!python -m json.tool<CR>
 
