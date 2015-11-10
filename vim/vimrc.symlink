@@ -97,6 +97,9 @@ autocmd Filetype coffee setlocal ts=2 sts=2 sw=2
 " folding
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
+" only search outside of folds by default
+:set fdo-=search
+
 " pretty print json
 nmap =j :%!python -m json.tool<CR>
 
