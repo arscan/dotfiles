@@ -23,8 +23,8 @@ set noswapfile
 
 " switch between previous and next buffers
 " buff nav: recursively follows tpope's impaired plugin because I'm lazy
-map <c-u> [b
-map <c-i> ]b
+map <c-i> [b
+map <c-o> ]b
 
 " show ctrl characters
 set list
