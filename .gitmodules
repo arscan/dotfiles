@@ -1,63 +1,63 @@
 [submodule "vim/vim.symlink/bundle/vim-rails"]
 	path = vim/vim.symlink/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = git@github.com:tpope/vim-rails.git
 [submodule "vim/vim.symlink/bundle/vim-bundler"]
 	path = vim/vim.symlink/bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = git@github.com:tpope/vim-bundler.git
 [submodule "vim/vim.symlink/bundle/vim-endwise"]
 	path = vim/vim.symlink/bundle/vim-endwise
-	url = git://github.com/tpope/vim-endwise.git
+	url = git@github.com:tpope/vim-endwise.git
 [submodule "vim/vim.symlink/bundle/easymotion"]
 	path = vim/vim.symlink/bundle/easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
+	url = git@github.com:Lokaltog/vim-easymotion.git
 [submodule "vim/vim.symlink/bundle/nerdtree"]
 	path = vim/vim.symlink/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = git@github.com:scrooloose/nerdtree.git
 [submodule "vim/vim.symlink/bundle/vim-eunuch"]
 	path = vim/vim.symlink/bundle/vim-eunuch
-	url = git://github.com/tpope/vim-eunuch.git
+	url = git@github.com:tpope/vim-eunuch.git
 [submodule "vim/vim.symlink/bundle/vim-fugitive"]
 	path = vim/vim.symlink/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = git@github.com:tpope/vim-fugitive.git
 [submodule "vim/vim.symlink/bundle/vim-ruby-sinatra"]
 	path = vim/vim.symlink/bundle/vim-ruby-sinatra
-	url = git://github.com/hallison/vim-ruby-sinatra.git
+	url = git@github.com:hallison/vim-ruby-sinatra.git
 [submodule "vim/vim.symlink/bundle/snipmate"]
 	path = vim/vim.symlink/bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+	url = git@github.com:msanders/snipmate.vim.git
 [submodule "vim/vim.symlink/bundle/supertab"]
 	path = vim/vim.symlink/bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = git@github.com:ervandew/supertab.git
 [submodule "vim/vim.symlink/bundle/tcomment"]
 	path = vim/vim.symlink/bundle/tcomment
-	url = git://github.com/tomtom/tcomment_vim.git
+	url = git@github.com:tomtom/tcomment_vim.git
 [submodule "vim/vim.symlink/bundle/vim-javascript"]
 	path = vim/vim.symlink/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
+	url = git@github.com:pangloss/vim-javascript.git
 [submodule "vim/vim.symlink/bundle/vim-gitgutter"]
 	path = vim/vim.symlink/bundle/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
+	url = git@github.com:airblade/vim-gitgutter.git
 [submodule "vim/vim.symlink/bundle/vim-go"]
 	path = vim/vim.symlink/bundle/vim-go
-	url = git://github.com/fatih/vim-go.git
+	url = git@github.com:fatih/vim-go.git
 [submodule "vim/vim.symlink/bundle/vim-coffee-script"]
 	path = vim/vim.symlink/bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
+	url = git@github.com:kchmck/vim-coffee-script.git
 [submodule "vim/vim.symlink/bundle/ctrlp.vim"]
 	path = vim/vim.symlink/bundle/ctrlp.vim
-	url = git://github.com/ctrlpvim/ctrlp.vim.git
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule "vim/vim.symlink/bundle/vim-unimpaired"]
 	path = vim/vim.symlink/bundle/vim-unimpaired
-	url = git://github.com/tpope/vim-unimpaired.git
+	url = git@github.com:tpope/vim-unimpaired.git
 [submodule "vim/vim.symlink/bundle/vim-airline"]
 	path = vim/vim.symlink/bundle/vim-airline
-	url = git://github.com/bling/vim-airline.git
+	url = git@github.com:bling/vim-airline.git
 [submodule "vim/vim.symlink/bundle/vim-togglelist"]
 	path = vim/vim.symlink/bundle/vim-togglelist
-	url = git://github.com/milkypostman/vim-togglelist.git
+	url = git@github.com:milkypostman/vim-togglelist.git
 [submodule "vim/vim.symlink/bundle/vim-json"]
 	path = vim/vim.symlink/bundle/vim-json
-	url = git://github.com/elzr/vim-json.git
+	url = git@github.com:elzr/vim-json.git
 [submodule "vim/vim.symlink/bundle/ag.vim"]
 	path = vim/vim.symlink/bundle/ag.vim
-	url = git://github.com/rking/ag.vim.git
+	url = git@github.com:rking/ag.vim.git
