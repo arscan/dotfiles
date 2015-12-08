@@ -61,6 +61,10 @@ set hidden
 " set the leader
 let mapleader = "\<Space>"
 
+" toggle wrap
+
+map <Leader>w :set wrap!<CR>
+
 " NERDTree settings
 let g:NERDTreeWinPos = "right"
 
