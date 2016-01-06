@@ -64,6 +64,9 @@ let mapleader = "\<Space>"
 " toggle wrap
 map <Leader>w :set wrap!<CR>
 
+" refresh all open buffers from disk
+map <Leader>r :bufdo e<CR>
+
 " quick close
 map <Leader>c :Bclose<CR>
 
