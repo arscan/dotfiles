@@ -16,6 +16,7 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+set list lcs=tab:»·
 
 " the backups/swapfiles are nothing but annoying to me
 set nobackup
