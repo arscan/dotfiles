@@ -27,6 +27,12 @@ set noswapfile
 map <c-i> [b
 map <c-o> ]b
 
+" Do not cycle through the quickfix etc buffers on next/prev buffer
+augroup qf
+  autocmd!
+  autocmd FileType qf set nobuflisted
+augroup END
+
 " show ctrl characters
 set list
 
