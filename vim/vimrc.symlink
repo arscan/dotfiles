@@ -24,8 +24,8 @@ set noswapfile
 
 " switch between previous and next buffers
 " buff nav: recursively follows tpope's impaired plugin because I'm lazy
-map <c-i> [b
-map <c-o> ]b
+map <c-h> [b
+map <c-l> ]b
 
 " Do not cycle through the quickfix etc buffers on next/prev buffer
 augroup qf
