@@ -76,6 +76,7 @@ map <Leader>r :bufdo e<CR>
 
 " quick close
 map <Leader>c :Bclose<CR>
+map <c-w> :Bclose<CR>
 
 " NERDTree settings
 let g:NERDTreeWinPos = "right"
